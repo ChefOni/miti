@@ -1,50 +1,11 @@
-# Welcome to your Expo app 👋
+# What is Miti 
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Miti bridges the gap between ancestral wisdom and modern safety by using AI to instantly identify African herbs and detect dangerous drug interactions. We are building the digital infrastructure for the continent's informal herbal market, empowering users to practice natural healing without the risk of blind medication. By digitizing this knowledge, we not only protect patients today but create the essential 'safety rails' for the future of African healthcare.
 
-## Get started
+## Inspiration
+The inspiration for Miti came from a dangerous "blind spot" in African healthcare. While modern medicine focuses on the clinical 20% of healthcare, nearly 80% of the continent relies on traditional herbal remedies that exist completely off the grid.
 
-1. Install dependencies
+We realized that millions of patients take powerful pharmaceutical drugs (like Warfarin or Metformin) alongside potent local herbs (like Zobo or Dogonyaro), with zero data on how they interact. This information gap isn't just a missed opportunity; it’s a public health risk. We wanted to build the "digital rails" that bridge this gap—codifying centuries of informal wisdom into a formal, queryable safety layer.
 
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## What it does 
+Miti is a digital companion that acts as a safety guardian for herbal users.AI Identification: Users snap a picture of a raw root or leaf, and Miti identifies it using its local name (e.g., Agbo) and scientific classification.Safety "Traffic Light": The app cross-references the herb against the user's current medications to detect interactions.The Interaction Engine: It calculates a safety profile, warning users if a combination is $High Risk$ (Red), $Moderate Risk$ (Yellow), or $Safe$ (Green).
