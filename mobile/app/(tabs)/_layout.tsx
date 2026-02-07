@@ -1,4 +1,4 @@
-import { Ionicons } from "@expo/vector-icons"
+import { Ionicons, Feather } from "@expo/vector-icons"
 import { Tabs } from "expo-router"
 
 const TabsLayout = () => {
@@ -7,16 +7,19 @@ const TabsLayout = () => {
       screenOptions={{
         headerShown: false,
         tabBarStyle: {
-          backgroundColor: "#F1F1F1",
-          paddingTop: 8,
-          height: 66,
+          backgroundColor: "#F6F2EC",
+          paddingTop: 6,
+          paddingBottom: 8,
+          height: 68,
           borderTopWidth: 1,
+          borderTopColor: "#D0C0AE",
         },
         tabBarActiveTintColor: "#2A2119",
-        tabBarInactiveTintColor: "#2A2119",
+        tabBarInactiveTintColor: "#7A6A5A",
         tabBarLabelStyle: {
           fontSize: 12,
-          fontWeight: 600,
+          fontWeight: "600",
+          fontFamily: "SpaceMono",
         },
 
       }}
@@ -24,7 +27,7 @@ const TabsLayout = () => {
       <Tabs.Screen
         name="index"
         options={{
-          title: "Home",
+          title: "Discover",
           tabBarIcon: ({ focused, color, size }) => (
             <Ionicons
               name={focused ? "home" : "home-outline"}
@@ -48,6 +51,33 @@ const TabsLayout = () => {
             />
           )
         }} />
+
+      <Tabs.Screen
+        name="directory"
+        options={{
+          title: "Directory",
+          tabBarIcon: ({ focused, color, size }) => (
+            <Feather
+              name="feather"
+              size={size}
+              color={color}
+            />
+          )
+        }} />
+
+      <Tabs.Screen
+        name="snap"
+        options={{
+          title: "Snap",
+          tabBarIcon: ({ focused, color, size }) => (
+            <Ionicons
+              name={focused ? "camera" : "camera-outline"}
+              size={size}
+              color={color}
+            />
+          )
+        }}
+      />
 
 
     </Tabs>
