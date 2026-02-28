@@ -1,75 +1,22 @@
-# React + TypeScript + Vite
+All I am hearing is to build 
+- an EMR layer (considered later - Most Africans do have medical records—they just sit in a plastic bag at home.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Feature: Users snap a photo of their paper prescription, lab result, or drug packaging. Miti extracts the text (drug name, dosage) and adds it to their profile automatically.)
 
-Currently, two official plugins are available:
+- A fake drug checker ( later as well can't be MVP )
+- Family Profile ( not a feasible busness model , too may context for an AI if extended family are involved , maybe MITI family plan 
+- Medicine Cabinet - An extension of a feature 
+- Dosage Reminders and Streaks - Beyond the scope of the app 
+- Wellness check- can also be another Product to miti (EMR, fake drug checker and wellness checks)
+- Village Wisdom / Survey ( not for MVP but can be used to get credits for users on free version )
+- Verified Seller Locator - can be another product as well
+- Recipe/Concotion - can be done in an MVP 
+- Consultation mode ( cannot be in MVP , maybe part of the products as well )
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+MVP 
+- Get the users data by KYC or onboarding, get health symptoms , which drugs are they using , what are they taken , are they pregnant , simple survery
+- Herb directory & Herb locator - african herbs and which country/state can they be found so maybe if you're traveling and you are recommended an herb you know what totake 
+- Herb search - Search layer for the directory , can search for ailment, name , has location tags, type (roots, leaves )
+- Build user profile - From conversations they are having with the AI , the AI should be able to build the user's profile, what herbs are they taking or like a general search
+- Herbs survey for free credit 
+- General Herb report 
